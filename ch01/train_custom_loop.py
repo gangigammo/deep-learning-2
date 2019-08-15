@@ -5,7 +5,7 @@ import numpy as np
 from common.optimizer import SGD
 from dataset import spiral
 import matplotlib.pyplot as plt
-from two_layer_net import TwoLayerNet
+from ch01.two_layer_net import TwoLayerNet
 
 
 # ハイパーパラメータの設定
@@ -26,7 +26,7 @@ loss_count = 0
 loss_list = []
 
 for epoch in range(max_epoch):
-    # データのシャッフル
+    # データのシャッフル!!
     idx = np.random.permutation(data_size)
     x = x[idx]
     t = t[idx]

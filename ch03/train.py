@@ -3,7 +3,7 @@ import sys
 sys.path.append('..')  # 親ディレクトリのファイルをインポートするための設定
 from common.trainer import Trainer
 from common.optimizer import Adam
-from simple_cbow import SimpleCBOW
+from ch03.simple_cbow import SimpleCBOW
 from common.util import preprocess, create_contexts_target, convert_one_hot
 
 

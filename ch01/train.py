@@ -4,7 +4,7 @@ sys.path.append('..')  # 親ディレクトリのファイルをインポート�
 from common.optimizer import SGD
 from common.trainer import Trainer
 from dataset import spiral
-from two_layer_net import TwoLayerNet
+from ch01.two_layer_net import TwoLayerNet
 
 
 # ハイパーパラメータの設定
