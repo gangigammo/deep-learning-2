@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from common.optimizer import SGD
 from dataset import ptb
-from simple_rnnlm import SimpleRnnlm
+from ch05.simple_rnnlm import SimpleRnnlm
 
 
 # ハイパーパラメータの設定

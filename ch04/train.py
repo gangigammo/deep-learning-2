@@ -5,13 +5,13 @@ import numpy as np
 from common import config
 # GPUで実行する場合は、下記のコメントアウトを消去（要cupy）
 # ===============================================
-# config.GPU = True
+config.GPU = True
 # ===============================================
 import pickle
 from common.trainer import Trainer
 from common.optimizer import Adam
-from cbow import CBOW
-from skip_gram import SkipGram
+from ch04.cbow import CBOW
+from ch04.skip_gram import SkipGram
 from common.util import create_contexts_target, to_cpu, to_gpu
 from dataset import ptb
 

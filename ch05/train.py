@@ -4,7 +4,7 @@ sys.path.append('..')
 from common.optimizer import SGD
 from common.trainer import RnnlmTrainer
 from dataset import ptb
-from simple_rnnlm import SimpleRnnlm
+from ch05.simple_rnnlm import SimpleRnnlm
 
 
 # ハイパーパラメータの設定
