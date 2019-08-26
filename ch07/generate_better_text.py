@@ -2,7 +2,7 @@
 import sys
 sys.path.append('..')
 from common.np import *
-from rnnlm_gen import BetterRnnlmGen
+from ch07.rnnlm_gen import BetterRnnlmGen
 from dataset import ptb
 
 

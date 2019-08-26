@@ -26,10 +26,10 @@ xs = corpus[:-1]  # 入力
 ts = corpus[1:]  # 出力（教師ラベル）
 data_size = len(xs)
 print('corpus size: %d, vocabulary size: %d' % (corpus_size, vocab_size))
-
 # 学習時に使用する変数
 max_iters = data_size // (batch_size * time_size)
-time_idx = 0
+print(max_iters,data_size)
+time_idx = 0 # for文を通して常に更新されていく
 total_loss = 0
 loss_count = 0
 ppl_list = []
@@ -41,7 +41,7 @@ optimizer = SGD(lr)
 # ミニバッチの各サンプルの読み込み開始位置を計算
 jump = (corpus_size - 1) // batch_size
 offsets = [i * jump for i in range(batch_size)]
-
+#print(offsets) #[0, 99, 198, 297, 396, 495, 594, 693, 792, 891]
 for epoch in range(max_epoch):
     for iter in range(max_iters):
         # ミニバッチの取得

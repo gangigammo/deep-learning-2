@@ -7,8 +7,8 @@ from dataset import sequence
 from common.optimizer import Adam
 from common.trainer import Trainer
 from common.util import eval_seq2seq
-from seq2seq import Seq2seq
-from peeky_seq2seq import PeekySeq2seq
+from ch07.seq2seq import Seq2seq
+from ch07.peeky_seq2seq import PeekySeq2seq
 
 
 # データセットの読み込み

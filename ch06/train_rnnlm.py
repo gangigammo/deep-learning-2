@@ -5,7 +5,7 @@ from common.optimizer import SGD
 from common.trainer import RnnlmTrainer
 from common.util import eval_perplexity
 from dataset import ptb
-from rnnlm import Rnnlm
+from ch06.rnnlm import Rnnlm
 
 
 # ハイパーパラメータの設定
