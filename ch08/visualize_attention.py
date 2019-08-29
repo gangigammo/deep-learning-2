@@ -4,7 +4,7 @@ sys.path.append('..')
 import numpy as np
 from dataset import sequence
 import matplotlib.pyplot as plt
-from attention_seq2seq import AttentionSeq2seq
+from ch08.attention_seq2seq import AttentionSeq2seq
 
 
 (x_train, t_train), (x_test, t_test) = \
