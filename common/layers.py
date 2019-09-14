@@ -149,6 +149,7 @@ class Dropout:
 
 
 class Embedding:
+    #大きいベクトルから抜き取るためのレイヤ
     def __init__(self, W):
         self.params = [W]
         self.grads = [np.zeros_like(W)]
